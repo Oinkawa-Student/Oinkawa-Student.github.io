@@ -6,7 +6,7 @@ const responses = {
     "who is shakti": "He is an 18 year old boy who is aiming to graduate from MIT.",
     "who is the father of shakti singh": "His name is Sanjay Singh from India. A village development officer at azamgarh district.",
     "who is the mother of shakti singh": "Her name is Manju Lata Singh. She belongs to rupwar bhagwan pur from balia in Uttar Pradesh.",
-    "who is Mr. Ayush Kumar Singh" : "A professional IT department employee working as a data scientist and is the brother of one and only Shakti Singh."
+    "who is mr ayush kumar singh" : "A professional IT department employee working as a data scientist and is the brother of one and only Shakti Singh."
 };
 
 function sendMessage() {
