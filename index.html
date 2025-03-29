@@ -1,183 +1,62 @@
-<html>
-    <head>
-        <Title>Mr. Panda's AI</Title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body{
-    font-family: 'Exo', sans-serif;
-    transition: background-color .5s;
-}
-
-
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-
-.area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-    width: 100%;
-    height:100vh;
-    
-   
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-}
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
-
-@keyframes animate {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-
-}
-
-        </style>
-    </head>
-        <body>
-              
-            <div class="context">
-                <h1>Welcome To The Era of AI</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakti's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="photo-section">
+            <img src="Shakti's-photo1.jpg" alt="Shakti's Photo" class="profile-photo">
+            <div class="bio-overlay">
+                <p class="bio-text">Hello! I'm Shakti Singh, an aspiring computer scientist passionate about solving problems and enhancing technology. My goal is to contribute to the tech community and innovate at MIT.</p>
             </div>
-            <script>window.PICKAXE=window.PICKAXE||{pickaxes:[],style:"kHsjoCQGgI0GWASmgIdIA2CHA0wGQyCwBQBUiEBzQQC+EgGQwgMA3gLICDMAoAnQgvFSCsUIPQYgIHqAEw4NXUgIz6DFQ4OkwghP2AGnoMFJgKAFA8gEA4QAI9gVPBABGqBU3gAggTMBAUQ6ApYkAAgIFMxwLcKgRvlAhyyAIG8DFAoAF1QOTugMODACreB2osAqaIBABQAAGgaINAr0OASwUCiIQGBARk6AUOiAo9GAq6qAZUKAAkOAhKAAoIBDz4AAB4CkT4AR8YCSIYBygIASwoDgAoCTBoCTQIDT04B01oBj1IBDAYD1o4AWNYCmoIC29oBCM4CXl4CBgIDEU4DDN4Cyc4CnsoDReIATdoCiWYCXaoAZlIAVBYAYGoAaYoAntoD68YA3OIAb1ICIBIDZpIDEQIDBQIC3NIAgDIAIToBLxIAkBYDAAoCAFoAPLoC+L4D4GICOR4ACwIAKPIC0TICBUoBBwoAAGUAClKAQDJAIABgEi6QAYBQAoQC6JoAAykAAVGAL0BADEPgF5EQDokYBRYUAwpCACcRAFglgFxiQDPEYBIY8ATSOAAc9AONggAE2wAnioAQGcAxEqAOaFAEaCgBxHQB6RYA8kEAEPIATUAQJWADAZAAOIgDRZwCLxYA2pEABHaASmTANOAgFFPGSAGXTAIuhgEJEwDoBYAl7MACKaAURdAAYygBgmuSAELpAAAZgF8RwDnfYAy00At6CAQUFAC4JgHoSQDr9YAiYMATRqACn9AO3YgHXZQBiMIAy3sAGEiAQKhABk3AEzAADNgAA4QCBEIAyy0AcxmAPUpACi5gBcrwAYCIAE2UADzSAPBLAE2egAy9wApv4AtJMAGL2AHC5ADNZgByKwCEZIBwbEABIGAVarAJIqgE92wDEkIADwsAgkCAdIRACwGgFhMQB0YYAMxUAoX+ALIDAHYygEuBQDnM4BAQsAW86ABUFAABqgFTWQCzSIBB+0ARz+AT3PACVTgHNEwC3kIAWCkAABVAGe4wA/VMAZsfACHzQBfFEAUgRACN5QA1TEAZMZAAuTQAjN0AAAigA"},window.PICKAXE.pickaxes.push({id:"Oinkawas_Bot_QWYMX",type:"fab"});const{id:_fid}=window.PICKAXE.pickaxes[0];fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`).then((e=>e.json())).then((({v:e})=>{const t=`https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;if(!document.querySelector(`script[src="${t}/bundle.js"]`)){const e=document.createElement("script");e.src=t+"/bundle.js",e.defer=!0,document.head.appendChild(e)}}));</script>
+        </div>
         
-        
-        <div class="area" >
-                    <ul class="circles">
-                            <li></li>
-                            <li></li>-
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                    </ul>
-            </div >
-        </body>
+        <div class="content-section">
+            <h1>My Portfolio</h1>
+            <p>Welcome to my MIT admission portfolio. Here, I share my achievements in coding contests, tournament ranks, and my passion for technology.</p>
+            
+            <div class="stats">
+                <h2>Contest Ratings</h2>
+                <ul>
+		            <li>Codechef Rating: <strong>1406</strong></li>
+                    <li>Codeforces Rating: <strong>942</strong></li>
+                    <li>LeetCode Rating: <strong>N/A</strong></li>
+                    <li>AtCoder Rating: <strong>N/A</strong></li>
+                </ul>
+
+                <h2>Tournament Ranks</h2>
+                <ul>
+                    <li>IOI: <strong>Never Participated</strong></li>
+                    <li>ACM ICPC: <strong>Not yet participated</strong></li>
+                    <li>Google Code Jam: <strong>Never Participated</strong></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Section -->
+<div class="chatbot-container">
+    <div class="chatbot-header">
+        <h3>Chat with Me</h3>
+	<h3>Ask me from the following only.</h3>
+	<h3></h3>
+    </div>
+    <div class="chatbot-body" id="chatbot-body">
+        <div class="bot-message">Hello! How can I assist you today? <br> Brief description about Shakti/ Who is Shakti/Why is he still not into any college</div>
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+	<button id="voice-input-button" onclick="startVoiceRecognition()">🎤</button>
+    </div>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
-    
