@@ -3,9 +3,9 @@ const responses = {
     "your name": "I am personal chatbot of Shakti Singh. Feel free to ask me anything.",
     "how are you?": "I'm just a bot, but I'm doing well! How about you?",
     "bye": "Goodbye! Have a great day!",
-    "who is shakti?": "He is an 18 year old boy who is aiming to graduate from MIT.",
-    "who is the father of shakti singh?": "His name is Sanjay Singh from India. A village development officer at azamgarh district.",
-    "who is the mother of shakti singh?": "Her name is Manju Lata Singh. She belongs to rupwar bhagwan pur from balia in Uttar Pradesh."
+    "who is shakti": "He is an 18 year old boy who is aiming to graduate from MIT.",
+    "who is the father of shakti singh": "His name is Sanjay Singh from India. A village development officer at azamgarh district.",
+    "who is the mother of shakti singh": "Her name is Manju Lata Singh. She belongs to rupwar bhagwan pur from balia in Uttar Pradesh."
 };
 
 function sendMessage() {
